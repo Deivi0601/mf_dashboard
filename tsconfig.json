@@ -1,6 +1,8 @@
 {
+  "extends": "./src/mf_shared_components/files-config/tsconfig-shared.app.json",
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

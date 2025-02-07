@@ -12,6 +12,15 @@ export const routes: Routes = [
       }).then((c) => c.routes),
   },
   {
+    path: 'control_access',
+    loadChildren: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:4102/remoteEntry.js',
+        exposedModule: './routes',
+      }).then((c) => c.routes),
+  },
+  {
     path: '**',
     redirectTo: 'mantenance',
     pathMatch: 'full',

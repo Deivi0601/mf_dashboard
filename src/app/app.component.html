@@ -1,3 +1,17 @@
-<h1>Dashboard</h1>
+<h1
+  appTooltip="Buenas"
+  [configTooltip]="{ position: 'right' }"
+  class="width-fit-content"
+>
+  Dashboard
+</h1>
+
+<app-button classes="primary-button" [routerLink]="['/control_access']">
+  Go to control access
+</app-button>
+
+<app-button classes="primary-button" [routerLink]="['/mantenance']">
+  Go to mantenance
+</app-button>
 
 <router-outlet></router-outlet>

@@ -1,0 +1,3 @@
+[submodule "src/mf_shared_components"]
+	path = src/mf_shared_components
+	url = https://github.com/Deivi0601/mf_shared_components.git
